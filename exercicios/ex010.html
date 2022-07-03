@@ -12,16 +12,16 @@
     <input type="button" value="verificar" onclick="calcular()">
     <div id="res"></div>
     <script>
-        calcular(){
+        function calcular(){
             var vel = document.getElementById('txtvel')
             document.getElementById('res').innerHTML = `<p>Sua velocidade atual é de ${vel}Km/h</p>`
             if(vel > 60){
                 document.getElementById('res').innerHTML= `<p>Você utrapasou a velocidade limite, foi MULTADO</p>`
-            }else{document.getElementById('res').innerHTML = `<p>Você não utrapasou a velocidade limite/p>`}
-            }
+            }            
             document.getElementById('res').innerHTML = `Use sempre o cinto de segurança`
         
-        }
+    }        
+        
     </script>
 </body>
 </html>
